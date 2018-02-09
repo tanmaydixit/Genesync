@@ -3,11 +3,15 @@ package com.jogdand.genesync.fragments;
 
 import android.app.Fragment;
 import android.os.Bundle;
+import android.support.v7.widget.LinearLayoutManager;
+import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
 import com.jogdand.genesync.R;
+import com.jogdand.genesync.adapters.ClientAdapter;
+import com.jogdand.genesync.models.Client;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -24,6 +28,7 @@ public class DetailsFragment extends Fragment {
     private String mParam1;
     private String mParam2;
 
+    RecyclerView recyclerView;
 
     public DetailsFragment() {
         // Required empty public constructor
@@ -60,6 +65,19 @@ public class DetailsFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
+        View rootView=inflater.inflate(R.layout.fragment_details, container, false);
+
+        recyclerView=rootView.findViewById(R.id.details_rv);
+
+        Client clients[]=new Client[1];
+
+        //todo: to be given data from realm
+        clients[0]=new Client();
+
+        ClientAdapter clientAdapter=new ClientAdapter(clients);
+        recyclerView.setAdapter(clientAdapter);
+        recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
+
         return inflater.inflate(R.layout.fragment_details, container, false);
     }
 
