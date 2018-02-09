@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "285711145711",
+    "firebase_url": "https://genesync-2758e.firebaseio.com",
+    "project_id": "genesync-2758e",
+    "storage_bucket": "genesync-2758e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:285711145711:android:965c841044bf697f",
+        "android_client_info": {
+          "package_name": "com.jogdand.genesync"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "285711145711-kvg02gp4ros83171t8u52jvgoof0q3v3.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.jogdand.genesync",
+            "certificate_hash": "506cc66679f84c1e583cb61b04e321c6f3b42b45"
+          }
+        },
+        {
+          "client_id": "285711145711-ascsi339jjqrfjj4ns0ki7h79a82lj0l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAxAAQUeNBYRUfUHR5sJQ89vcxRj4wbTho"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "285711145711-ascsi339jjqrfjj4ns0ki7h79a82lj0l.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
